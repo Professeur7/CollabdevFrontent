@@ -1,14 +1,16 @@
 import { Component } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {
+  faCake,
+  faCar,
   faCog,
-  faCoins, faGear,
+  faCoins, faGear, faHamburger,
   faHome,
   faLayerGroup,
   faLightbulb,
   faList,
   faMedal,
-  fas
+  fas, faUser
 } from '@fortawesome/free-solid-svg-icons';
 import {RouterLink, RouterOutlet} from '@angular/router';
 @Component({
@@ -26,4 +28,5 @@ export class Sidebar {
   protected readonly faLayerGroup = faLayerGroup;
   protected readonly faList = faList;
   protected readonly faGear = faGear;
+
 }

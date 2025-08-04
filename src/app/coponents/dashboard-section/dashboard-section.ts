@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import {RouterOutlet} from '@angular/router';
 import {FaIconComponent} from '@fortawesome/angular-fontawesome';
-import {faCoins, faMedal} from '@fortawesome/free-solid-svg-icons';
+import {faCoins, faMedal, faUserGroup} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-dashboard-section',
@@ -13,4 +13,5 @@ export class DashboardSection {
 
   protected readonly faCoins = faCoins;
   protected readonly faMedal = faMedal;
+  protected readonly faUserGroup = faUserGroup;
 }
