@@ -1,6 +1,6 @@
 import { Component, signal } from '@angular/core';
 import {RouterLink, RouterOutlet} from '@angular/router';
-import {DasboardAdmin} from './coponents/dasboard-admin/dasboard-admin';
+import {DasboardAdmin} from './features/components-administrateur/dasboard-admin/dasboard-admin';
 
 
 @Component({
