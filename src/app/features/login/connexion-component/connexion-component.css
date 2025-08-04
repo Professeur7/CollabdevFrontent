@@ -1,0 +1,193 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  width: 1440px;
+  height: 1024px;
+  background: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+}
+
+.sidebar {
+  position: absolute;
+  width: 722px;
+  height: 1024px;
+  left: 718px;
+  top: 0px;
+  background: #EBEBEB;
+}
+
+.illustration {
+  position: absolute;
+  width: 749px;
+  height: 749px;
+  left: 0px;
+  top: 60px;
+  background: url('/images/Pair programming-cuate 2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.login-btn {
+  position: absolute;
+  width: 214px;
+  height: 82px;
+  left: 961px;
+  top: 685px;
+  background: #2417DF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.login-btn span {
+  width: 131px;
+  height: 44px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+
+.logo {
+  position: absolute;
+  width: 145px;
+  height: 145px;
+  left: 780px;
+  top: 60px;
+  background: url('/images/valider-git 2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.title {
+  position: absolute;
+  width: 368px;
+  height: 102px;
+  left: 922px;
+  top: 103px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 77px;
+  color: #5149E2;
+}
+
+.email-input {
+  position: absolute;
+  width: 660px;
+  height: 89px;
+  left: 738px;
+  top: 306px;
+  background: #FFFFFF;
+  border: 2px solid #B1A8A8;
+  border-radius: 14px;
+  padding: 0 20px;
+  font-size: 24px;
+}
+
+.email-label {
+  position: absolute;
+  width: 125px;
+  height: 29px;
+  left: 746px;
+  top: 254px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+.password-input {
+  position: absolute;
+  width: 660px;
+  height: 89px;
+  left: 736px;
+  top: 512px;
+  background: #FFFFFF;
+  border: 2px solid #B1A8A8;
+  border-radius: 14px;
+  padding: 0 20px;
+  font-size: 24px;
+}
+
+.password-label {
+  position: absolute;
+  width: 215px;
+  height: 29px;
+  left: 746px;
+  top: 459px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+.signup-link {
+  position: absolute;
+  width: 396px;
+  height: 61px;
+  left: 925px;
+  top: 878px;
+}
+
+.signup-link span {
+  position: absolute;
+  width: 312px;
+  height: 23px;
+  left: 25px;
+  top: 14px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+.signup-link a {
+  color: #5149E2;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.slogan {
+  position: absolute;
+  width: 662.92px;
+  height: 91.6px;
+  left: 44px;
+  top: 756px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+@media (min-width: 1024px) {
+  .title {
+    font-size: 4rem;
+  }
+}

@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #FFFFFF;
+  color: #000000;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.illustration-section {
+  order: 2;
+  background: #FFFFFF;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.illustration {
+  width: 100%;
+  max-width: 749px;
+  height: auto;
+  aspect-ratio: 1/1;
+  background: url('/images/Pair programming-cuate 2.png') center/contain no-repeat;
+  margin-bottom: 2rem;
+}
+
+.slogan {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.02em;
+  max-width: 663px;
+  margin: 0 auto;
+}
+
+.form-section {
+  order: 1;
+  background: #EBEBEB;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  background: url('/images/valider-git 2.png') center/contain no-repeat;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  color: #5149E2;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.registration-form {
+  width: 100%;
+  max-width: 660px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-label {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.form-input {
+  width: 100%;
+  height: 60px;
+  background: #FFFFFF;
+  border: 2px solid #B1A8A8;
+  border-radius: 14px;
+  padding: 0 20px;
+  font-size: 1rem;
+}
+
+.register-btn {
+  width: 100%;
+  max-width: 214px;
+  height: 82px;
+  background: #2417DF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  margin: 1rem auto;
+}
+
+.register-btn span {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+}
+
+.login-link {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.login-link a {
+  color: #5149E2;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Media Queries pour le responsive */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    min-height: 100vh;
+  }
+
+  .illustration-section {
+    order: 1;
+    flex: 1;
+    justify-content: center;
+  }
+
+  .form-section {
+    order: 2;
+    flex: 1;
+    justify-content: center;
+  }
+
+  .logo {
+    width: 145px;
+    height: 145px;
+  }
+
+  .title {
+    font-size: 3.5rem;
+  }
+
+  .form-label {
+    font-size: 1.5rem;
+  }
+
+  .form-input {
+    height: 70px;
+    font-size: 1.2rem;
+  }
+
+  .login-link {
+    font-size: 1.2rem;
+  }
+
+  .slogan {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .title {
+    font-size: 4rem;
+  }
+}

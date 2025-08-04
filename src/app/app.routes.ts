@@ -6,11 +6,20 @@ import {Domaines} from './features/components-administrateur/domaines/domaines';
 import {ParametrerLesBadges} from './features/components-administrateur/parametrer-les-badges/parametrer-les-badges';
 import {Projets} from './features/components-administrateur/projets/projets';
 import {ParametrerNotifications} from './features/components-administrateur/parametrer-notifications/parametrer-notifications';
+import {InscriptionComponent} from './features/login/inscription-component/inscription-component';
+import {ConnexionComponent} from './features/login/connexion-component/connexion-component';
 
 export const routes: Routes = [
+  { path: '', redirectTo: 'connexion', pathMatch: 'full' },
   {
-    path: "", component: DashboardSection
+    path: "inscription", component: InscriptionComponent
   },
+  {
+    path: "connexion", component: ConnexionComponent
+  },
+  /*{
+    path: "", component: DashboardSection
+  },*/
   {
     path: "ideeProjet", component: IdeesDeProjets
   },

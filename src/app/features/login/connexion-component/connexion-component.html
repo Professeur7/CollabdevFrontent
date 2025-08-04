@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CollabDev - Connexion</title>
+</head>
+<body>
+<div class="illustration"></div>
+<div class="sidebar"></div>
+
+<div class="logo"></div>
+<h1 class="title">CollabDev</h1>
+
+<label for="email" class="email-label">Email</label>
+<input type="email" id="email" class="email-input" placeholder="Votre email">
+
+<label for="password" class="password-label">Mot de passe</label>
+<input type="password" id="password" class="password-input" placeholder="Votre mot de passe">
+
+<button class="login-btn">
+  <span>Connexion</span>
+</button>
+
+<div class="signup-link">
+  <span>Pas encore de compte ? <a [routerLink]="['/inscription']">S'inscrire</a></span>
+</div>
+
+<p class="slogan">Collaborez pour l'innovation et la créativité</p>
+</body>
+</html>
