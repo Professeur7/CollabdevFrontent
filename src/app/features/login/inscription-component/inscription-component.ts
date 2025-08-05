@@ -3,7 +3,7 @@ import {RouterLink, RouterOutlet} from '@angular/router';
 
 @Component({
   selector: 'app-inscription-component',
-  imports: [RouterOutlet, RouterLink],
+  imports: [RouterOutlet, RouterLink ],
   templateUrl: './inscription-component.html',
   styleUrl: './inscription-component.css'
 })

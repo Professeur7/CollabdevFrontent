@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import {RouterLink, RouterOutlet} from '@angular/router';
 
 @Component({
-  selector: 'app-reconpenses',
+  selector: 'app-dashboard-section',
   imports: [RouterLink, RouterOutlet],
-  templateUrl: './reconpenses.html',
-  styleUrl: './reconpenses.css'
+  templateUrl: './dashboard-section.html',
+  styleUrl: './dashboard-section.css'
 })
-export class Reconpenses {
+export class DashboardSection {
 
 }

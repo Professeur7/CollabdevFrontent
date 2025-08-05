@@ -1,0 +1,210 @@
+.sidebar {
+  position: fixed;
+  width: 429px;
+  height: 100vh;
+  top: 95px;
+  left: 0;
+  background: #FFFFFF;
+  overflow-y: auto;
+  z-index: 100;
+}
+
+.user-profile {
+  position: relative;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.user-avatar {
+  width: 211px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: url('/images/userFig.png') center/cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.notification-badge {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background: #5149E2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: 'Inria Serif', serif;
+  font-weight: 700;
+  font-size: 40px;
+  top: 242px;
+  left: 50%;
+  transform: translateX(50%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.user-name {
+  font-family: 'Inria Serif', serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: #000000;
+  margin-top: 20px;
+}
+
+.user-title {
+  font-family: 'Inria Serif', serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #757575;
+  margin-top: 5px;
+}
+
+.sidebar-menu {
+  margin-top: 40px;
+}
+
+.menu-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 20px 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.menu-item.active {
+  background: rgba(81, 73, 226, 0.33);
+}
+
+.menu-item.active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 14px;
+  background: #5149E2;
+}
+
+.menu-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.menu-text {
+  font-family: 'Inria Sans', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: #000000;
+  flex-grow: 1;
+}
+
+.notification-count {
+  background: #4F46E5;
+  border-radius: 22px;
+  padding: 0 15px;
+  color: white;
+  font-family: 'Inria Sans', sans-serif;
+  font-size: 24px;
+}
+
+.all-projects-btn {
+  width: 334px;
+  height: 79px;
+  background: linear-gradient(90deg, #5149E2 0%, #4179FD 100%);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.all-projects-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 350px;
+  }
+
+  .user-avatar {
+    width: 180px;
+    height: 180px;
+  }
+
+  .notification-badge {
+    width: 60px;
+    height: 60px;
+    font-size: 32px;
+    top: 220px;
+  }
+
+  .menu-text {
+    font-size: 28px;
+  }
+
+  .all-projects-btn {
+    width: 280px;
+    height: 70px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 280px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .user-avatar {
+    width: 150px;
+    height: 150px;
+  }
+
+  .notification-badge {
+    width: 50px;
+    height: 50px;
+    font-size: 28px;
+    top: 200px;
+  }
+
+  .user-name {
+    font-size: 28px;
+  }
+
+  .user-title {
+    font-size: 20px;
+  }
+
+  .menu-text {
+    font-size: 24px;
+  }
+
+  .all-projects-btn {
+    width: 240px;
+    height: 60px;
+    font-size: 18px;
+  }
+}

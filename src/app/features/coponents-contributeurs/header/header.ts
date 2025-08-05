@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import {RouterLink, RouterOutlet} from '@angular/router';
 
 @Component({
-  selector: 'app-reconpenses',
+  selector: 'app-header',
   imports: [RouterLink, RouterOutlet],
-  templateUrl: './reconpenses.html',
-  styleUrl: './reconpenses.css'
+  templateUrl: './header.html',
+  styleUrl: './header.css'
 })
-export class Reconpenses {
+export class Header {
 
 }
