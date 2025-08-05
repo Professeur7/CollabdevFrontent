@@ -6,7 +6,6 @@ import {Domaines} from './features/components-administrateur/domaines/domaines';
 import {ParametrerLesBadges} from './features/components-administrateur/parametrer-les-badges/parametrer-les-badges';
 import {Projets} from './features/components-administrateur/projets/projets';
 import {ParametrerNotifications} from './features/components-administrateur/parametrer-notifications/parametrer-notifications';
-import {IdeeDeProjets} from './features/coponents-contributeurs/idee-de-projets/idee-de-projets';
 import {IdeeDeProjet} from './features/components-administrateur/idee-de-projet/idee-de-projet';
 
 export const routes: Routes = [

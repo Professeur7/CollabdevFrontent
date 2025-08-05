@@ -17,7 +17,9 @@ export class IdeeDeProjet {
     {id: 5, titre: "Projet E", description: "Description B", contributeurs: "Oumar, Dolo"},
     {id: 6, titre: "Projet F", description: "Description B", contributeurs: "Oumar, Dolo"},
     {id: 7, titre: "Projet G", description: "Description B", contributeurs: "Oumar, Dolo"},
-    {id: 8, titre: "Projet H", description: "Description B", contributeurs: "Oumar, Dolo"}
+    {id: 8, titre: "Projet H", description: "Description B", contributeurs: "Oumar, Dolo"},
+    {id: 9, titre: "Projet H", description: "Description B", contributeurs: "Oumar, Dolo"},
+    {id: 10, titre: "Projet H", description: "Description B", contributeurs: "Oumar, Dolo"}
   ];
   deleteRow(id: number): void {
     if (confirm('Êtes-vous sûr de vouloir supprimer cette ligne ?')) {
