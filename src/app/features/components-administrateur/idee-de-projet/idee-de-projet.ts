@@ -1,0 +1,27 @@
+import { Component } from '@angular/core';
+import {RouterOutlet} from '@angular/router';
+import {CommonModule} from '@angular/common';
+
+@Component({
+  selector: 'app-idee-de-projet',
+  imports: [RouterOutlet,CommonModule],
+  templateUrl: './idee-de-projet.html',
+  styleUrl: './idee-de-projet.css'
+})
+export class IdeeDeProjet {
+  data = [
+    {id: 1, titre: "Projet bbb", description: "Description A", contributeurs: "Mamoutou, Sangaré"},
+    {id: 2, titre: "Projet B", description: "Description B", contributeurs: "Oumar, Dolo"},
+    {id: 3, titre: "Projet C", description: "Description B", contributeurs: "Sanata, Keita"},
+    {id: 4, titre: "Projet D", description: "Description B", contributeurs: "Oumar, Dolo"},
+    {id: 5, titre: "Projet E", description: "Description B", contributeurs: "Oumar, Dolo"},
+    {id: 6, titre: "Projet F", description: "Description B", contributeurs: "Oumar, Dolo"},
+    {id: 7, titre: "Projet G", description: "Description B", contributeurs: "Oumar, Dolo"},
+    {id: 8, titre: "Projet H", description: "Description B", contributeurs: "Oumar, Dolo"}
+  ];
+  deleteRow(id: number): void {
+    if (confirm('Êtes-vous sûr de vouloir supprimer cette ligne ?')) {
+      this.data = this.data.filter(item => item.id !== id);
+    }
+  }
+}
