@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e8dede;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Boîte principale */
+.modal {
+  background-color: white;
+  width: 700px;
+  margin: 40px auto;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* En-tête violette */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #b3a7f5;
+  padding: 12px 20px;
+}
+
+.modal-header h1 {
+  font-size: 20px;
+  color: #3c3ca1;
+  margin: 0;
+}
+
+.close-btn {
+  background-color: #1f6de2;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+/* Corps */
+.modal-body {
+  padding: 20px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+}
+
+.auteur {
+  color: black;
+}
+
+.content-label {
+  margin: 20px 0 10px;
+  font-weight: normal;
+}
+
+/* Bloc de code */
+.code-block {
+  border: 1px solid #ccc;
+  background-color: #fdfdfd;
+  padding: 15px;
+  border-radius: 8px;
+  font-family: 'Courier New', monospace;
+  white-space: pre-wrap;
+}
+
+.fonctionnalite {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Code */
+pre {
+  margin: 0;
+  overflow-x: auto;
+}
+
+code {
+  font-size: 14px;
+  line-height: 1.6;
+}

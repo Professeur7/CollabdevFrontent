@@ -1,0 +1,39 @@
+  <link rel="stylesheet" href="contribution-details.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+<body>
+  <div class="modal">
+    <div class="modal-header">
+      <h1>Contributions</h1>
+      <button class="close-btn">X</button>
+    </div>
+
+    <div class="modal-body">
+      <div class="info-row">
+        <p>La contribution a été faite le <strong>25/07/2025</strong> par :</p>
+        <p class="auteur"><strong>Oumar DOLO</strong></p>
+      </div>
+
+      <p class="content-label">Contenu</p>
+
+      <div class="code-block">
+        <p class="fonctionnalite"><strong>Fonctionnalité d’authentification</strong></p>
+<pre><code>import org.springframework.stereotype.Service;
+
+@Service
+public class AuthService {
+    private final UtilisateurRepository utilisateurRepository;
+
+    public AuthService(UtilisateurRepository utilisateurRepository) {
+        this.utilisateurRepository = utilisateurRepository;
+    }
+
+    public boolean login(String email, String motDePasse) {
+        return utilisateurRepository.findByEmail(email)
+                .map(u -> u.getMotDePasse().equals(motDePasse))
+                .orElse(false);
+    }
+}</code></pre>
+      </div>
+    </div>
+  </div>
