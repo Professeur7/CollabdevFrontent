@@ -46,9 +46,9 @@ export const routes: Routes = [
     }
   ]
 },
-{
-  path: "projects", 
-  component: ListProjects
-}
+  {
+    path: "projects", 
+    component: ListProjects
+  }
 
 ];

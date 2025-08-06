@@ -1,6 +1,6 @@
 <div class="container">
   <button class="btn-retour">
-    <i class="fas fa-arrow-left"></i> Retour
+    <fa-icon [icon]="faArrowLeft"></fa-icon> Retour
   </button>
 
   <h2 class="title">La liste des Projets</h2>
@@ -12,7 +12,6 @@
         <th>Titre</th>
         <th>Statut</th>
         <th>Coin</th>
-        <th>Débloqué</th>
         <th>Voir</th>
       </tr>
     </thead>
@@ -22,13 +21,21 @@
         <td>{{ projet.titre }}</td>
         <td>{{ projet.statut }}</td>
         <td>{{ projet.coin }}</td>
-        <td>{{ projet.debloque }}</td>
         <td class="actions">
-          <button><i class="fas fa-eye"></i></button>
-          <button><i class="fas fa-lock-open"></i></button>
-          <button><i class="fas fa-ellipsis-v"></i></button>
+          <button (click)="openProjectDetails(projet)"><fa-icon [icon]="faEye"></fa-icon></button>
+          <button><fa-icon [icon]="faEllipsisV"></fa-icon></button>
         </td>
       </tr>
     </tbody>
   </table>
+
+
+  <app-popup-eye>
+    [project]="selectedProject"
+    [showModal]="showModal"
+    (closeModal)="closeProjectDetails()"
+    (saveProject)="onSaveProject()"
+    (joinProject)="onJoinProject()">
+  </app-popup-eye>
+
 </div>
