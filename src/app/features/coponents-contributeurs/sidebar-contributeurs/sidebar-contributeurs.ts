@@ -13,7 +13,7 @@ import {
 
 @Component({
   selector: 'app-sidebar-contributeurs',
-  standalone: true, // ✅ Indispensable ici
+  standalone: true,
   imports: [RouterOutlet, RouterLink, FontAwesomeModule],
   templateUrl: './sidebar-contributeurs.html',
   styleUrl: './sidebar-contributeurs.css'
