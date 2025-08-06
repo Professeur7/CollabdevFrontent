@@ -1,0 +1,122 @@
+/* Style général du body : police sans serif, fond gris clair, et marges autour du contenu */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fc;
+  margin: 20px;
+}
+
+/* Conteneur principal : largeur max 600px, fond blanc, ombre légère, coins arrondis */
+.container {
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* En-tête : disposition en ligne avec espace entre les éléments, centrage vertical */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Style du texte dans l’en-tête : gras et taille légèrement plus grande */
+.header p {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Style du champ textarea (zone de texte) : largeur complète, bord gris, coins arrondis */
+textarea#contenu {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Bouton "ajouter" : fond bleu, texte blanc, arrondi, curseur pointeur */
+.btn-ajouter {
+  background-color: #5c6bc0;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+/* Icône à gauche dans le bouton : un petit espace à droite pour le séparer du texte */
+.btn-ajouter i {
+  margin-right: 5px;
+}
+
+/* Permet à la table de défiler horizontalement si elle dépasse du conteneur */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+/* Style de la table : largeur complète, suppression des espaces entre les cellules */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Cellules (th et td) : espacement interne, alignement à gauche, bordure inférieure grise */
+table th,
+table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 0.95rem;
+}
+
+/* Style des en-têtes de colonnes : largeur fixe et texte légèrement grisé */
+table th {
+  width: 40px;
+  color: #555;
+}
+
+/* Dernière cellule de chaque ligne (souvent les actions) : alignée à droite */
+table td:last-child {
+  text-align: right;
+  color: #666;
+}
+
+/* Icône en forme d’œil (souvent utilisée pour "voir" un détail) : curseur pointeur */
+.fa-eye {
+  cursor: pointer;
+}
+
+/* Conteneur de la barre de recherche : fond gris clair, bord arrondi, alignement horizontal */
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 8px 12px;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 15px;
+}
+
+/* Icône dans la barre de recherche : couleur grise et petite marge à droite */
+.search-container i {
+  color: #999;
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+/* Champ texte de recherche : sans bord ni fond, prend tout l’espace restant */
+.search-container input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  font-size: 14px;
+  color: #333;
+}
