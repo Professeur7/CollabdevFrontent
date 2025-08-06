@@ -12,6 +12,9 @@ import { Sidebar } from './features/coponents-contributeurs/sidebar/sidebar';
 import { DashboardContributeur } from './features/coponents-contributeurs/dashboard-contributeur/dashboard-contributeur';
 import { DasboardContributeurSection } from './features/coponents-contributeurs/dasboard-contributeur-section/dasboard-contributeur-section';
 import { ListProjects } from './features/coponents-contributeurs/list-projects/list-projects';
+import { MesProjet } from './features/coponents-contributeurs/mes-projet/mes-projet';
+import { Contributions } from './features/coponents-contributeurs/contributions/contributions';
+import { Reconpenses } from './features/coponents-contributeurs/reconpenses/reconpenses';
 
 export const routes: Routes = [
   {
@@ -46,9 +49,58 @@ export const routes: Routes = [
     }
   ]
 },
-  {
+{
+    path: "TableauContributeur", component: DashboardContributeur,
+     children: [
+    {
+      path: "",
+      component: DasboardContributeurSection // affiché par défaut quand on navigue vers /dashboardContributeur
+    }
+  ]
+},
+
+{
+    path: "ideeProjetContributeur", component: DashboardContributeur,
+    children: [
+      {
+        path: "",
+        component: IdeeDeProjets // affiché par défaut quand on navigue vers /ideeProjetContributeur
+      }
+    ]
+},
+{
+  path:"ProjetsContributeurs",
+  component: DashboardContributeur,
+  children:[
+    {
+      path:'',
+      component: MesProjet // affiché par défaut quand on navigue vers /ProjetsContributeurs
+    }
+  ]
+},
+{
+  path:"ContriContri",
+  component: DashboardContributeur,
+  children:[
+    {
+      path:'',
+      component: Contributions, // affiché par défaut quand on navigue vers /ContriContri
+    }
+  ]
+},
+{
+  path:"Recompenses",
+  component: DashboardContributeur,
+  children:[
+    {
+      path:'',
+      component: Reconpenses, // affiché par défaut quand on navigue vers /Recompenses
+    }
+  ]
+},
+{
     path: "projects", 
     component: ListProjects
-  }
+}
 
 ];
