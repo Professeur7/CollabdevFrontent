@@ -11,6 +11,7 @@ import {IdeeDeProjet} from './features/components-administrateur/idee-de-projet/
 import { Sidebar } from './features/coponents-contributeurs/sidebar/sidebar';
 import { DashboardContributeur } from './features/coponents-contributeurs/dashboard-contributeur/dashboard-contributeur';
 import { DasboardContributeurSection } from './features/coponents-contributeurs/dasboard-contributeur-section/dasboard-contributeur-section';
+import { ListProjects } from './features/coponents-contributeurs/list-projects/list-projects';
 
 export const routes: Routes = [
   {
@@ -36,9 +37,18 @@ export const routes: Routes = [
     path: "ParemtrerNotication", component: ParametrerNotifications
   },
   {
-    path: "dasboradContributeur", component: DashboardContributeur, children: [
-      {path:"dasboradContributeur", component: DasboardContributeurSection},
-    ]
-  }
+  path: "dashboardContributeur",
+  component: DashboardContributeur,
+  children: [
+    {
+      path: "",
+      component: DasboardContributeurSection // affiché par défaut quand on navigue vers /dashboardContributeur
+    }
+  ]
+},
+{
+  path: "projects", 
+  component: ListProjects
+}
 
 ];

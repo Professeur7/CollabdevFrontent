@@ -1,12 +1,10 @@
 import { Component, signal } from '@angular/core';
-import {RouterLink, RouterOutlet} from '@angular/router';
-import {DasboardAdmin} from './features/components-administrateur/dasboard-admin/dasboard-admin';
-import { Contributions } from "./features/coponents-contributeurs/contributions/contributions";
+import { RouterOutlet } from '@angular/router';
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, DasboardAdmin, RouterLink, Contributions],
+  imports: [RouterOutlet],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

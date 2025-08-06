@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
-import {RouterOutlet} from '@angular/router';
-import {FaIconComponent} from '@fortawesome/angular-fontawesome';
+import { FaIconComponent } from '@fortawesome/angular-fontawesome';
 import {faCoins, faMedal, faUserGroup} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-dashboard-section',
-  imports: [RouterOutlet, FaIconComponent],
+  imports: [FaIconComponent],
   templateUrl: './dashboard-section.html',
   styleUrl: './dashboard-section.css'
 })

@@ -3,7 +3,7 @@ import {RouterOutlet} from '@angular/router';
 
 @Component({
   selector: 'app-parametrer-notifications',
-  imports: [RouterOutlet],
+  imports: [],
   templateUrl: './parametrer-notifications.html',
   styleUrl: './parametrer-notifications.css'
 })

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { RouterLink } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faCodeBranch, faCog, faGear, faHome, faLayerGroup, faLightbulb, faList, faMedal, fas, faTrophy,faUserCircle } from '@fortawesome/free-solid-svg-icons';
 

@@ -1,10 +1,9 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import {RouterOutlet} from '@angular/router';
-import {CommonModule} from '@angular/common';
 
 @Component({
   selector: 'app-idee-de-projet',
-  imports: [RouterOutlet,CommonModule],
+  imports: [CommonModule],
   templateUrl: './idee-de-projet.html',
   styleUrl: './idee-de-projet.css'
 })
