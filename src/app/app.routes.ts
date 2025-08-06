@@ -12,6 +12,7 @@ import { Sidebar } from './features/coponents-contributeurs/sidebar/sidebar';
 import { DashboardContributeur } from './features/coponents-contributeurs/dashboard-contributeur/dashboard-contributeur';
 import { DasboardContributeurSection } from './features/coponents-contributeurs/dasboard-contributeur-section/dasboard-contributeur-section';
 import { ListProjects } from './features/coponents-contributeurs/list-projects/list-projects';
+import { PopupEye } from './features/coponents-contributeurs/list-projects/popup-eye/popup-eye';
 
 export const routes: Routes = [
   {
@@ -48,7 +49,13 @@ export const routes: Routes = [
 },
   {
     path: "projects", 
-    component: ListProjects
+    component: ListProjects,
+    children: [
+      {
+        path: "projects",
+        component: PopupEye
+      }
+    ]
   }
 
 ];

@@ -117,10 +117,14 @@ export class ListProjects {
 
   // Ouvre le popup avec les détails d'un projet
   openProjectDetails(project: any) {
+    // this.selectedProject = project;
+    // this.showModal = true;
+    // // Empêche le défilement en arrière-plan
+    // document.body.style.overflow = 'hidden';
+
+    console.log("Projet cliqué :", project);
     this.selectedProject = project;
-    this.showModal = true;
-    // Empêche le défilement en arrière-plan
-    document.body.style.overflow = 'hidden';
+    this.showModal = true;  
   }
 
   // Ferme le popup
