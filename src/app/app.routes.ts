@@ -8,10 +8,16 @@ import {Projets} from './features/components-administrateur/projets/projets';
 import {ParametrerNotifications} from './features/components-administrateur/parametrer-notifications/parametrer-notifications';
 import {IdeeDeProjets} from './features/coponents-contributeurs/idee-de-projets/idee-de-projets';
 import {IdeeDeProjet} from './features/components-administrateur/idee-de-projet/idee-de-projet';
+import { Sidebar } from './features/coponents-contributeurs/sidebar/sidebar';
+import { DashboardContributeur } from './features/coponents-contributeurs/dashboard-contributeur/dashboard-contributeur';
+import { DasboardContributeurSection } from './features/coponents-contributeurs/dasboard-contributeur-section/dasboard-contributeur-section';
 
 export const routes: Routes = [
   {
-    path: "", component: DashboardSection
+    path: "", component: DasboardAdmin, children: [
+
+      {path: "", component: DashboardSection},
+    ]
   },
   {
     path: "ideeProjet", component: IdeeDeProjet
@@ -28,5 +34,11 @@ export const routes: Routes = [
   },
   {
     path: "ParemtrerNotication", component: ParametrerNotifications
+  },
+  {
+    path: "dasboradContributeur", component: DashboardContributeur, children: [
+      {path:"dasboradContributeur", component: DasboardContributeurSection},
+    ]
   }
+
 ];

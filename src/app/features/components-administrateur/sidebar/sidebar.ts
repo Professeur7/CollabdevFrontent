@@ -28,5 +28,6 @@ export class Sidebar {
   protected readonly faLayerGroup = faLayerGroup;
   protected readonly faList = faList;
   protected readonly faGear = faGear;
+  
 
 }
