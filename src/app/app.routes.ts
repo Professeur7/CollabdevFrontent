@@ -69,6 +69,16 @@ export const routes: Routes = [
     ]
   },
   {
+    path: "AdminDashboard",
+    component: DasboardAdmin,
+    children: [
+      {
+        path: "",
+        component: DashboardSection
+      }
+    ]
+  },
+  {
   path: "dashboardContributeur",
   component: DashboardContributeur,
   children: [
