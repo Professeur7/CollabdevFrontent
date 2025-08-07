@@ -149,7 +149,8 @@ export const routes: Routes = [
 {
     path:"Inscription",
     component: InscriptionComponent
-}
+},
+  { path: '', redirectTo: 'Connexion', pathMatch: 'full' },
 
 
 ];
