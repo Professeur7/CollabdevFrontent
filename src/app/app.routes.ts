@@ -22,29 +22,51 @@ import {
 import {
   MesContributionsContributeurs
 } from './features/coponents-contributeurs/mes-contributions-contributeurs/mes-contributions-contributeurs';
+import {ConnexionComponent} from './features/login/connexion-component/connexion-component';
+import {InscriptionComponent} from './features/login/inscription-component/inscription-component';
 
 export const routes: Routes = [
-  {
-    path: "", component: DasboardAdmin, children: [
 
-      {path: "", component: DashboardSection},
+  {
+    path: "ideeProjet",
+    component: IdeeDeProjet
+  },
+
+  {
+    path: "Domaines",
+    component: DasboardAdmin,
+    children:[
+      {
+        path: "",
+        component: Domaines
+      }
     ]
   },
   {
-    path: "ideeProjet", component: IdeeDeProjet
-  },
+    path: "ParametrerBadge", component: DasboardAdmin, children: [
 
-  {
-    path: "Domaines", component: Domaines
+      {path: "", component: ParametrerLesBadges},
+    ]
   },
   {
-    path: "ParametrerBadge", component: ParametrerLesBadges
+    path: "Projet",
+    component: DasboardAdmin,
+    children:[
+      {
+        path: "",
+        component: Projets
+      }
+    ]
   },
   {
-    path: "Projet", component: Projets
-  },
-  {
-    path: "ParemtrerNotication", component: ParametrerNotifications
+    path: "ParemtrerNotication",
+    component: DasboardAdmin,
+    children:[
+      {
+        path: "",
+        component: ParametrerNotifications
+      }
+    ]
   },
   {
   path: "dashboardContributeur",
@@ -108,6 +130,16 @@ export const routes: Routes = [
 {
     path: "projects",
     component: ListProjects
+},
+  {
+    path:"Connexion",
+    component: ConnexionComponent
+  },
+
+  {
+    path:"Inscription",
+    component: InscriptionComponent
   }
+
 
 ];

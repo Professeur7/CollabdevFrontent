@@ -1,9 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import {Sidebar} from "../sidebar/sidebar";
+import {Header} from "../header/header";
 
 @Component({
   selector: 'app-idee-de-projet',
-  imports: [CommonModule],
+  imports: [CommonModule, Sidebar, Header],
   templateUrl: './idee-de-projet.html',
   styleUrl: './idee-de-projet.css'
 })
